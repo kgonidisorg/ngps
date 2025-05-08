@@ -15,8 +15,6 @@
   - [🚀 Getting Started](#-getting-started)
     - [1. Clone the Repo](#1-clone-the-repo)
 - [or](#or)
-- [or](#or-1)
-- [or](#or-2)
 
 ---
 
@@ -51,62 +49,8 @@
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/your-org/ngps-dashboard.git
-cd ngps-dashboard
-2. Install Dependencies
-bash
-Copy
-Edit
-npm install
-# or
-yarn install
-3. SCSS Setup
-Install Sass
-
-bash
-Copy
-Edit
-npm install --save-dev sass
-# or
-yarn add --dev sass
-Import global SCSS in pages/_app.tsx:
-
-ts
-Copy
-Edit
-// pages/_app.tsx
-import "../assets/scss/globals.scss";
-
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
-Organize NGPS styles under src/assets/scss/ngps/ with leading underscores on partials:
-
-scss
-Copy
-Edit
-// src/assets/scss/ngps.scss
-@import "./ngps/variables";
-@import "./ngps/mixins";
-@import "./ngps/buttons";
-/* …etc. */
-(Optional) includePaths in next.config.js for load-path imports:
-
-js
-Copy
-Edit
-// next.config.js
-const path = require("path");
-
-module.exports = {
-  sassOptions: {
-    includePaths: [path.join(__dirname, "src", "assets", "scss")],
-  },
-};
-4. Run the Dev Server
-bash
-Copy
-Edit
+git clone https://github.com/your-org/ngps
+cd ngps
 npm run dev
 # or
 yarn dev
