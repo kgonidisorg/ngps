@@ -14,7 +14,7 @@
   - [📋 Prerequisites](#-prerequisites)
   - [🚀 Getting Started](#-getting-started)
     - [1. Clone the Repo](#1-clone-the-repo)
-- [or](#or)
+- [Project Structure](#project-structure)
 
 ---
 
@@ -52,9 +52,15 @@
 git clone https://github.com/your-org/ngps
 cd ngps
 npm run dev
-# or
+```
+or
+
+```bash
 yarn dev
 Visit http://localhost:3000 to see the NGPS analytics overlay.
+```
+
+# Project Structure
 
 📁 Project Structure
 lua
