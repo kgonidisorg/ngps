@@ -63,7 +63,7 @@ Visit http://localhost:3000 to see the NGPS analytics overlay.
 # Project Structure
 
 📁 Project Structure
-lua
+```lua
 Copy
 Edit
 src/
@@ -82,3 +82,4 @@ src/
    ├─ _app.tsx
    └─ index.tsx
 next.config.js
+```
