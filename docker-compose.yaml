@@ -1,0 +1,7 @@
+version: '3'
+services:
+  app:
+    image: ghcr.io/kgonidisorg/ngps:latest
+    container_name: ngps
+    ports:
+      - "3003:80"
