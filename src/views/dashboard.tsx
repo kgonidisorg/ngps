@@ -1,19 +1,14 @@
 "use client";
 import React, { useState } from 'react';
 import { Row, Col, Card, CardHeader, CardBody, CardTitle, Button } from 'reactstrap';
-import StickyControlBar, { FilterSet } from '@/components/StickyControlBar';
 import SpeedTimeSeriesChart, { fetchSpeedTimeSeriesData } from '@/components/SpeedTimeSeriesChart';
 import AccelerationHistogram from '@/components/AccelerationHistogram';
 import DataVolumeHeatmap from '@/components/DataVolumeHeatmap';
 import MaintenanceTimeline, { fetchMaintenanceEvents, MaintenanceEvent } from '@/components/MaintenanceTimeline';
 
 export default function NGPSDashboard() {
-  const [filters, setFilters] = useState<Record<string, unknown>>({});
+  const [filters] = useState<Record<string, unknown>>({});
 
-  const handleFiltersChange = (newFilters: FilterSet) => {
-    setFilters(newFilters);
-    // Trigger data fetch for new metrics based on updated filters
-  };
 
   const downloadSpeedCSV = () => {
     // Stub: generate CSV for speed data
